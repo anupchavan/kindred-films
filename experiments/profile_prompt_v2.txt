@@ -1,0 +1,19 @@
+Read the file at the path given below. It contains the complete subtitle dialogue text of one movie, one cue per line. Based ONLY on what you read in this file, write a JSON object profiling the movie:
+
+{
+  "plot": "5-7 sentence synopsis: the concrete story - who wants what, the key events, turns, and ending - told WITH its emotional valence ('an abduction that becomes an unlikely liberation' is a different story from 'an abduction that descends into terror', even when events match). Keep events specific and add what they mean; never replace events with meaning.",
+  "hook": "ONE sentence: the distinctive premise, mechanism, or central conceit of this movie, stated with its emotional charge (e.g. 'a grieving engineer rebuilds his dead wife as a machine - tenderly, and wrongly'). This is what you'd tell a friend to make them instantly get what makes this movie itself.",
+  "themes": ["5-8 core themes, lowercase noun phrases"],
+  "vibe": "tone words plus 1-2 sentences describing how the movie FEELS to watch (e.g. melancholic awe, cozy warmth, mounting dread), independent of what happens in it",
+  "arc": "2-3 sentences on the emotional trajectory from start to end - the shape of the feeling, not the plot",
+  "texture": "2-3 sentences: pacing, dialogue style, humor level, violence/intensity, any notable sound cues in brackets",
+  "world": "1-2 sentences: setting, era, scale (intimate/city/global/cosmic)"
+}
+
+Rules:
+- Do NOT try to identify or name the movie, its actors, or its title. Profile only what the text itself shows.
+- Do not use character names in any field; use role descriptions (e.g. "a retired pilot") instead.
+- Never name or allude to any other film in any field.
+- Output ONLY the JSON object, no markdown fences, no commentary.
+
+Subtitle file path:

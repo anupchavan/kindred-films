@@ -1,0 +1,13 @@
+.env
+.venv/
+__pycache__/
+.DS_Store
+
+# the index and anything built from subtitles
+data/*
+!data/weights.json
+!data/eval_clusters.json
+logs/
+vault/
+archive/
+backups/
